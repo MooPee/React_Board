@@ -1,12 +1,13 @@
-import React from "react";
-import { BrowserRouter, Routes, Router, Route, Switch } from "react-router-dom";
-import Header from './Header';
-import Sign from "./app/Sign.js";
-import Login from "./app/Login.js";
-import Board from "./app/Board.js";
-import BoardCreate from "./app/BoardCreate.js";
+var version = "@VERSION", commonJs = function() {
+    return new commonJs.fn.init();
+};
 
-function App() {
+commonJs.fn = commonJs.prototype = {
+    commonJs : version,
+    constructor : commonJs
+};
+
+(function() {
     function getCookie(key){
         key = new RegExp(key + '=([^;]*)'); // 쿠키들을 세미콘론으로 구분하는 정규표현식 정의
         return key.test(document.cookie) ? unescape(RegExp.$1) : ''; // 인자로 받은 키에 해당하는 키가 있으면 값을 반환
@@ -24,22 +25,4 @@ function App() {
         cookieText+=(cookieSecure ? '; SECURE' : '');
         document.cookie=cookieText;
     }
-
-    return (
-        <>
-        <Header />
-        <section className="container">
-        <Routes>
-            <Route path="/" element={<Login />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/sign" element={<Sign />} />
-            <Route path="/board" element={<Board />} />
-            <Route path="/board/create" element={<BoardCreate />} />
-            <Route path="/board/:id" element={<BoardCreate />} />
-        </Routes>
-        </section>
-        </>
-    );
-}
-
-export default App;
+})();

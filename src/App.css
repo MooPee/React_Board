@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+/* SCETION */
+.container {
+  padding: 40px 40px 40px 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, section, figure, article, header, nav, footer {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+  box-sizing: border-box;
+}
+/* SCETION */
+
+/* HEADER */
+strong, b {
+  font-weight: 600;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+b {
+  font-weight: bold;
+}
+
+header article p {
+  display: inline-block;
+  margin-right: 30px;
+  line-height: 50px;
+}
+
+header article {
+  display: inline-block;
+  float: right;
+  padding-right: 30px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 50px;
+  margin-top: 10px;
+}
+
+header article button {
+  padding: 0 20px;
+  line-height: 30px;
+  border: 1px solid #aaa;
+  background: #eee;
+}
+/* HEADER */
+
+.loginDiv {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 80vh;
+  text-align: left;
+  flex-direction: column; 
 }
 
-.App-link {
-  color: #61dafb;
+.loginBtn {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 68px;
+  border-radius: 5px;
+  text-align: center;
+  background: #1d68dc;
+  border-width: 0px;
+  cursor:pointer; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginTxt {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  line-height: 45px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.loginDiv fieldset {
+  width: 600px;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.loginDiv fieldset p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.loginDiv fieldset p label {
+  float: left;
+  width: 105px;
+  font-size: 16px;
+  line-height: 45px;
+}
+
+.loginDiv h1 {
+  float: left;
+  text-align: left;
+  font-size: 36px;
+}
+
+.errorTxt {
+  font-size: 16px;
+  color: red;
+  display: none;
+}
+
+.btnDefault {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  margin: 0 3px;
+  padding: 0 25px;
+  font-size: 15px;
+  line-height: 39px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background: #666;
+  cursor:pointer; 
+}
+
+.titDep1 {
+  margin-bottom: 40px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+body, input, textarea, select, button, table, th, td {
+  color: #333;
+  font-family: "Malgun Gothic","맑은 고딕",돋움, Dotum,굴림,Gulim;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.rightBtn {
+  float: right;
+}
+
+/* TABLE */
+.selectSearch th:first-child {
+  border-left: 0;
+}
+
+.selectSearch th {
+  text-align: center;
+  background: #f5f5f5;
+  width: 200px;
+}
+
+.selectSearch td {
+  width: 800px;
+}
+
+.selectSearch th, .selectSearch td {
+  padding: 10px 15px;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+table th {
+  font-weight: 600;
+}
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
+}
+
+.selectSearch td input[type=text], .selectSearch td input[type=password], .selectSearch td select {
+  min-width: 50px;
+}
+
+input[type=text], input[type=password], input[type=file] {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  resize: none;
+}
+
+.widthMax {
+  width: 100%;
+}
+
+.selectSearch {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
 }
